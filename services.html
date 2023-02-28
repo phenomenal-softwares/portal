@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHENOMENAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/126c863153.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link rel="icon" href="img/icon.png">
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  color: white;
+  border: 3px solid purple;
+  background: purple;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.responsive {
+  padding: 0 20px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a{
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">SERVICES</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="services.html" class="w3-bar-item w3-button">OUR SERVICES</a>
+      <a href="app.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>OUR APPS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR SERVICES</a>
+  <a href="apps.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR APPS</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+ 
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <img id="logo" src="img/service.png" alt="logo" width="100%"/>
+  
+</header>
+
+<div class="w3-center">
+<h2>How can we help you?</h2>
+<h4>Select any of our services below</h4>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="web.html">
+      <img src="services/serv1.jpeg" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>WEB DEVELOPMENT</h2>
+      We build related and relevant websites for schools, churches, companies, offices, trades, organizations and even for personal uses
+      </div>
+      </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="web.html">
+      <img src="services/serv2.png" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>WEB DESIGN</h2>
+   We give your website the best and ultra-modern designs with eye-catching features and an awesome user interface
+   </div>
+   </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="web.html">
+      <img src="services/serv3.jpeg" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>WEB MAINTENANCE</h2>
+    We provide maintenance and tech support for your site. We also protect your site from external attacks
+    </div>
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="web.html">
+      <img src="services/serv4.jpeg" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>WEB HOSTING</h2>
+      We host your site and give you recognition across the entire world. With our powerful tools, we ensure your website is recognized and easily accessible by search engines
+      </div>
+      </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="web.html">
+      <img src="services/serv5.jpeg" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>APP DEVELOPMENT</h2>
+  We develop games and apps for personal and professional uses - educational apps, casual apps, work-related apps and apps for your organization, schedules and programmes 
+      </div>
+      </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="graphics.html">
+      <img src="services/serv6.jpg" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>GRAPHIC DESIGN</h2>
+  We make beautiful logos, flyers, banners, calendars, stickers, and lots more!
+      </div>
+      </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="animation.html">
+      <img src="services/serv7.png" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>ANIMATION</h2>
+   We create beautiful and artistic 2D and 3D animations for your business advertisements and entertainment
+      </div>
+      </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 footer">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>
+    All rights reserved <br />
+    Phenomenal Softwares <br />
+    Osogbo, Osun State <br />
+    Nigeria <br />
+    ©2023
+  </p>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/profile.php?id=100089266208846" 
+    <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://instagram.com/phenomenal_animations?igshid=YmMyMTA2M2Y=">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
+    <a href="https://wa.link/blqfnp">
+    <i class="fa fa-whatsapp w3-hover-opacity"></i>
+    </a>
+    <a href="mailto:abiodunojo453@gmail.com">
+      <i class="fa fa-envelope w3-hover-opacity"></i>
+    </a>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

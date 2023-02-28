@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>PHENOMENAL Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/126c863153.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link rel="icon" href="img/icon.png">
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+td{
+  text-transform: uppercase;
+}
+tr:nth-child(odd) {
+  background-color: #e3d6ee;
+}
+</style>
+  </head>
+  <body>
+    
+<h4 class="w3-center">Business Information</h4>
+
+<table>
+  <tr>
+  <th>Company</th>
+  <td id="name">Griffin</td>
+  </tr>
+  <tr>
+  <th>Category</th>
+  <td id="category">Griffin</td>
+  </tr>
+  <tr>
+  <th>Product/services</th>
+  <td id="type">Swanson</td>
+  </tr>
+  <tr>
+  <th>Examples</th>
+  <td id="example">Brown</td>
+  </tr>
+  <tr>
+  <th>Contact(work)</th>
+  <td id="work">Brown</td>
+  </tr>
+  <tr>
+  <th>Contact(personal)</th>
+  <td id="mobile">Brown</td>
+  </tr>
+  <tr>
+  <th>Location</th>
+  <td id="address">Brown</td>
+  </tr>
+  <tr>
+  <th>Long-distance delivery</th>
+  <td id="delivery">Brown</td>
+  </tr>
+  <tr>
+  <th>Single/Bulk Sales</th>
+  <td id="mode">NIL</td>
+  </tr>
+  <tr>
+  <th>Animation</th>
+  <td id="animation">NIL</td>
+  </tr>
+</table>
+<div class="w3-center">
+  
+<button onclick="print()" class="w3-button w3-black w3-margin-top" type="submit">
+     <i class="fa-solid fa-print"></i>
+     PRINT
+        </button> <br />
+<button onclick="history.back()" class="w3-button w3-red w3-margin-top" type="submit">
+     <i class="fa-solid fa-pen-to-square"></i>
+     EDIT INFO
+        </button> <br />
+ <button onclick="window.location.replace('index.html')" class="w3-button w3-green w3-margin-top" type="submit">
+     <i class="fa-solid fa-home"></i>
+     HOME
+        </button>
+        
+     </div>
+  <script type="text/javascript" charset="utf-8">
+document.getElementById('name').innerHTML = localStorage.name;
+document.getElementById('category').innerHTML = localStorage.category;
+document.getElementById('type').innerHTML = localStorage.type;
+document.getElementById('example').innerHTML = localStorage.example;
+document.getElementById('work').innerHTML = localStorage.work;
+document.getElementById('mobile').innerHTML = localStorage.mobile;
+document.getElementById('address').innerHTML = localStorage.address;
+document.getElementById('delivery').innerHTML = localStorage.delivery;
+document.getElementById('mode').innerHTML = localStorage.mode;
+document.getElementById('animation').innerHTML = localStorage.anim;
+  </script>
+  </body>
+</html>

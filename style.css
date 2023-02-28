@@ -1,0 +1,90 @@
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.crt{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-image: url('crtfl.jpg');
+  background-size: contain;
+  border: 5px solid green;
+  padding: 0;
+}
+.crtPhoto{
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+}
+.xmas{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #9a0707;
+  background-size: contain;
+  border: 5px solid green;
+}
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 2px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.footer{
+  margin-left: -2px;
+  margin-bottom: -2px;
+}
+.footer a {
+  text-decoration: none;
+}

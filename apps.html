@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHENOMENAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/126c863153.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link rel="icon" href="img/icon.png">
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  color: white;
+  border: 3px solid purple;
+  background: purple;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.responsive {
+  padding: 0 20px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a{
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">APPS</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="services.html" class="w3-bar-item w3-button">OUR SERVICES</a>
+      <a href="apps.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>OUR APPS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR SERVICES</a>
+  <a href="apps.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR APPS</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+ 
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <img id="logo" src="img/app.png" alt="logo" width="100%"/>
+  
+</header>
+
+<div class="w3-center">
+<h3>Click on an app to download it</h3>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://github.com/phenomenal-softwares/portal/raw/main/elena.apk">
+      <img src="app/elena.png" alt="elena" width="600" height="400">
+    <div class="desc">
+      <h2>ELENA: AI COMPANION</h2>
+      Elena is an AI companion designed for personal friendship with interactive chats, gists and lots more
+      </div>
+      </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://github.com/phenomenal-softwares/portal/raw/main/snake%20adventure.apk">
+      <img src="app/snake.jpg" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>SNAKE ADVENTURE</h2>
+   A basic snake game with simple controls and levels function
+   </div>
+   </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://github.com/phenomenal-softwares/portal/raw/main/abbeycal2.apk">
+      <img src="app/abbeycal2.png" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>ABBEYCAL 2</h2>
+    A simple easy-to-use calculator with basic scientific functions with beautiful UI, time-date and themes
+    </div>
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://github.com/phenomenal-softwares/portal/raw/main/abbeycal.apk">
+      <img src="app/abbeycal.png" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>ABBEYCAL</h2>
+      Perform basic calculations with histories of your entries
+      </div>
+      </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://github.com/phenomenal-softwares/portal/raw/main/guess.apk">
+      <img src="app/guess.png" alt="guess" width="600" height="400">
+    <div class="desc">
+      <h2>GUESS THE NUMBER</h2>
+  Try to beat the game by guessing a number between 0 and 500 with only 10 trials  
+      </div>
+      </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://files.appsgeyser.com/Shark%20Game_15834825.apk?utm_source=email&utm_medium=email&utm_campaign=downloadApp">
+      <img src="app/shark.png" alt="shark" width="600" height="400">
+    <div class="desc">
+      <h2>SHARK GAME</h2>
+  Enjoy the underwater world of shark game. Eat fishes, fire missiles and avoid threats 
+      </div>
+      </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://github.com/phenomenal-softwares/portal/raw/main/love.apk">
+      <img src="app/lovemeter.png" alt="web" width="600" height="400">
+    <div class="desc">
+      <h2>LOVE METER</h2>
+   Get the percentage of love existing between you and a friend or family. Find out how much someone loves you!
+      </div>
+      </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 footer">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>
+    All rights reserved <br />
+    Phenomenal Softwares <br />
+    Osogbo, Osun State <br />
+    Nigeria <br />
+    ©2023
+  </p>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/profile.php?id=100089266208846" 
+    <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://instagram.com/phenomenal_animations?igshid=YmMyMTA2M2Y=">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
+    <a href="https://wa.link/blqfnp">
+    <i class="fa fa-whatsapp w3-hover-opacity"></i>
+    </a>
+    <a href="mailto:abiodunojo453@gmail.com">
+      <i class="fa fa-envelope w3-hover-opacity"></i>
+    </a>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
