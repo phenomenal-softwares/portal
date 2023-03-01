@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHENOMENAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/126c863153.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link rel="icon" href="img/icon.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+*{
+  max-width: 100%;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+#logo{
+  margin-top: 50px;
+  margin-bottom: -17px;
+}
+label{
+  margin-right: 30px;
+  color: purple;
+}
+#bizType, #bizName, #bizExample, #bizPhone, #bizLocation, #personalPhone, #ministry, #programme, #venue, #theme, #guest, #phone{
+  color: purple;
+}
+#bizCategory, #workType{
+  padding: 10px;
+  color: purple;
+}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+::placeholder{
+  color: red;
+}
+#starting, #ending, #date{
+  width: 50%;
+  color: purple;
+  background: white;
+  display: inline;
+}
+#programTime{
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">GRAPHICS</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="services.html" class="w3-bar-item w3-button">OUR SERVICES</a>
+      <a href="app.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>OUR APPS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR SERVICES</a>
+  <a href="apps.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR APPS</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+ 
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <img id="logo" src="services/serv6.jpg" alt="logo" width="100%"/>
+  
+</header>
+
+<div class="w3-center">
+<h4>Make your brand stand out with a beautiful graphic design</h4>
+</div>
+<div class="w3-container w3-light-grey">
+
+  <p class="w3-center w3-large">
+      <h3>TERMS OF USE</h3>
+  <ul>
+    <li>Fill the form correctly and submit with the button. A sample is shown at the bottom of the page</li>
+    <li>Print your form as a PDF and send it to us on either WhatsApp or Facebook</li>
+    <li>You will also have to send us photos of your stock/goods/services/business card along with your form</li>
+    <li>Your work will be delivered within three days</li>
+    <li><b>Pricing:</b> To be discussed on WhatsApp, based on the selected graphic work </li>
+  </ul>
+  </p>
+  
+  <div style="margin-top:48px">
+   <h5>FOR BUSINESS ORGANIZATIONS</h5>
+    <form id="bizForm" action="printout2.html">
+      <p><input class="w3-input w3-border" type="text" id="bizName" placeholder="Name of business/organization" required></p>
+      <p>
+   <select name="bizCategory" id="bizCategory">
+      <option value="nil">CHOOSE GRAPHIC WORK</option>
+ <option value="2D logo">Logo - 2D</option>
+ <option value="3D logo">Logo - 3D</option>
+ <option value="flyer">Flyer</option>
+ <option value="sticker">Sticker</option>
+ <option value="business card">Business card</option>
+ <option value="other">Others</option>
+      </select>
+      </p>
+      <p><input class="w3-input w3-border" type="text" id="bizType" placeholder="Type of product/services" required></p>
+      <p><input class="w3-input w3-border" type="text" id="bizExample" placeholder="Examples of product/services" required></p>
+      <p><input class="w3-input w3-border" type="number" id="bizPhone" placeholder="Phone number(work)" required></p>
+      <p><input class="w3-input w3-border" type="number" id="personalPhone" placeholder="Phone number(personal)" required></p>
+      <p><input class="w3-input w3-border" type="text" id="bizLocation" placeholder="Location (personal or company)" required></p>
+     <p>
+     <strong>LONG-DISTANCE DELIVERY: </strong> <br />
+         <input type="radio" name="biz" id="yes" value="yes" onclick="localStorage.delivery='yes'"/>
+         <label for="yes">YES</label>
+         <input type="radio" name="biz" id="no" value="no" onclick="localStorage.delivery='no'"/>
+         <label for="no"> NO </label>
+     </p>
+      <p>
+       <strong>SINGLE/BULK SALES:</strong>
+       <br />
+         <input type="radio" name="bulk" id="single" value="single" onclick="localStorage.mode='single'"/>
+         <label for="single">SINGLE</label>
+         <input type="radio" name="bulk" id="bulk" value="bulk" onclick="localStorage.mode='bulk'"/>
+         <label for="bulk">BULK</label>
+         <input type="radio" name="bulk" id="both" value="both" onclick="localStorage.mode='both'"/>
+         <label for="both">BOTH</label>
+     </p>
+    
+ <input type="checkbox" id="agree" name="rule" />
+<label for="agree">I agree to all Terms and Conditions</label>
+    
+      
+    <button onclick="saveData()" class="w3-button w3-black w3-margin-top" type="submit">
+     <i class="fa fa-paper-plane"></i> SUBMIT FORM
+        </button>
+    </form>
+    <hr />
+    
+     <div style="margin-top:48px">
+   <h5>FOR PROGRAMMES</h5>
+    <form id="bizForm" action="printout4.html">
+      <p><input class="w3-input w3-border" type="text" id="ministry" placeholder="Name of Ministry" required></p>
+      <p><input class="w3-input w3-border" type="text" id="programme" placeholder="Name of programme" required></p>
+      <p><input class="w3-input w3-border" type="text" id="theme" placeholder="Topic/theme of programme" required></p>
+      <p><input class="w3-input w3-border" type="text" id="venue" placeholder="Venue of programme" required></p>
+      <p><span id="programTime">Date of programme:</span>
+        <input class="w3-input w3-border" type="date" id="date" placeholder="Date of programme" required></p>
+      <p><span id="programTime">Starting time:</span>
+      <input class="w3-input w3-border" type="time" id="starting" placeholder="Starting time" required></p>
+      <p><span id="programTime">Ending time:</span>
+        <input class="w3-input w3-border" type="time" id="ending" placeholder="Ending time" required></p>
+      <p><input class="w3-input w3-border" type="text" id="guest" placeholder="Guest speaker and invitees" required></p>
+      <p><input class="w3-input w3-border" type="number" id="phone" placeholder="Phone number" required></p>
+       <p>
+  <strong>GRAPHICS TYPE:</strong> <br />
+        <input type="radio" name="anim" id="2d" value="2d" onclick="localStorage.workType='flyer'"/>
+         <label for="2d">FLYER</label>
+         <input type="radio" name="anim" id="3d" value="3d" onclick="localStorage.workType='sticker'"/>
+         <label for="3d">STICKER</label>
+     </p>
+    
+ <input type="checkbox" id="agree2" name="rule" />
+<label for="agree2">I agree to all Terms and Conditions</label>
+    
+    <button onclick="saveData2()" class="w3-button w3-black w3-margin-top" type="submit">
+     <i class="fa fa-paper-plane"></i> SUBMIT FORM
+        </button>
+    </form>
+    <hr />
+    <!-- Image of location/map -->
+    <p>Your submitted form should look like this</p>
+    <img src="img/sample2.png" class="w3-image" style="width:100%">
+  </div>
+</div>
+<hr />
+<hr />
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 footer">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>
+    All rights reserved <br />
+    Phenomenal Softwares <br />
+    Osogbo, Osun State <br />
+    Nigeria <br />
+    ©2023
+  </p>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/profile.php?id=100089266208846" 
+    <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://instagram.com/phenomenal_animations?igshid=YmMyMTA2M2Y=">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
+    <a href="https://wa.link/blqfnp">
+    <i class="fa fa-whatsapp w3-hover-opacity"></i>
+    </a>
+    <a href="mailto:abiodunojo453@gmail.com">
+      <i class="fa fa-envelope w3-hover-opacity"></i>
+    </a>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

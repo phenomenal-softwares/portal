@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHENOMENAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/126c863153.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link rel="icon" href="img/icon.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+*{
+  max-width: 100%;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+#logo{
+  margin-top: 30px;
+  margin-bottom: -17px;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="services.html" class="w3-bar-item w3-button">OUR SERVICES</a>
+      <a href="apps.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>OUR APPS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR SERVICES</a>
+  <a href="apps.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR APPS</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+ 
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <img id="logo" src="img/logo.png" alt="logo" width="100%"/>
+  
+</header>
+
+<!-- About Section -->
+<div class="w3-content w3-section imgSlide" >
+
+ <img class="mySlides w3-animate-fading" src="img/show1.png" style="width:100%">
+ <img class="mySlides w3-animate-fading" src="img/show2.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/show3.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/show4.png" style="width:100%">
+<img class="mySlides w3-animate-fading" src="img/show5.png" style="width:100%">
+<img class="mySlides w3-animate-fading" src="img/show6.png" style="width:100%">
+</div>
+
+<div class="w3-center" id="msgCoord">
+  <h3 class="w3-center">YOU ARE WELCOME!</h3>
+<img src="img/welcome.png" alt="msg" width="100%" />
+</div>
+<hr />
+
+<div onclick="document.location='services.html'" class="w3-container w3-center w3-margin-bottom">
+  <h3>OUR SERVICES</h3>
+  <img src="img/service.png" alt="service" width="100%"/>
+ <button class="w3-button w3-black" type="submit">
+     <i class="fa fa-paper-plane"></i> Proceee to SERVICES
+        </button>
+</div>
+<hr />
+
+<div onclick="document.location='apps.html'" class="w3-container w3-center w3-margin-bottom">
+  <h3>OUR GAMES & APPS</h3>
+  <img src="img/app.png" alt="service" width="100%"/>
+ <button class="w3-button w3-black" type="submit">
+     <i class="fa fa-paper-plane"></i> Proceee to APPS&GAMES
+        </button>
+</div>
+<hr />
+<div class="w3-container w3-center w3-margin-bottom">
+  <h4>WHY DO YOU NEED TECHNOLOGY FOR YOUR ORGANIZATION?</h4>
+  <img src="img/tech.jpg" alt="tech" width="100%"/>
+</div>
+<hr />
+<hr />
+<div id="about" class="w3-container" style="padding:18px 16px" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+
+  <div class="w3-row-padding w3-center" style="margin-top:14px">
+<button class="accordion">GENERAL INFORMATION</button>
+<div class="panel">
+  <p>Founded in 2022 by a team of seasoned developers and experts in Graphics Design and Computer Science, <strong>Phenomenal Softwares™ </strong> is a modern tech company with specializations in Web Development, App Development and Graphical works</p>
+</div>
+
+<button class="accordion">OUR MISSION</button>
+<div class="panel">
+  <p>At Phenomenal, we believe in excellency and affordability. We are committed to giving the best services at the most affordable prices</p>
+</div>
+
+<button class="accordion">OUR MASCOT</button>
+<div class="panel">
+  <p>The Eagle is renowned for its vision, strength, high-altitude flight, and independence. These are our core principles at Phenomenal!</p>
+</div>
+
+<button class="accordion">WHAT WE DO</button>
+<div class="panel">
+  <p>
+    <ul>
+      <li>We build, design and host beautiful and responsive websites for personal and professional purposes</li>
+      <li>We develop mobile apps for casual and professional purposes</li>
+      <li>We make beautiful works of graphics like logos, flyers, branding, stickers, calendars and others</li>
+      <li>We also create 2D and 3D animations for business advertisements and entertainment</li>
+    </ul>
+  </p>
+</div>
+
+<button class="accordion">CONTACT</button>
+<div class="panel">
+  <p>
+    (+234) 08086792440 - WhatsApp & calls
+  </p>
+</div>
+    
+  </div>
+</div>
+<hr />
+
+<hr />
+<!-- Contact Section -->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 footer">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>
+    All rights reserved <br />
+    Phenomenal Softwares <br />
+    Osogbo, Osun State <br />
+    Nigeria <br />
+    ©2023
+  </p>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/profile.php?id=100089266208846" 
+    <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://instagram.com/phenomenal_animations?igshid=YmMyMTA2M2Y=">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
+    <a href="https://wa.link/blqfnp">
+    <i class="fa fa-whatsapp w3-hover-opacity"></i>
+    </a>
+    <a href="mailto:abiodunojo453@gmail.com">
+      <i class="fa fa-envelope w3-hover-opacity"></i>
+    </a>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
