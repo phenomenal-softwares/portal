@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>PHENOMENAL Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/126c863153.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link rel="icon" href="img/icon.png">
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+td{
+  text-transform: uppercase;
+}
+tr:nth-child(odd) {
+  background-color: #e3d6ee;
+}
+</style>
+  </head>
+  <body>
+    
+<h4 class="w3-center">Programme Information</h4>
+
+<table>
+  <tr>
+  <th>Ministry</th>
+  <td id="ministry">Griffin</td>
+  </tr>
+  <tr>
+  <th>Programme</th>
+  <td id="programme">Griffin</td>
+  </tr>
+  <tr>
+  <th>Theme</th>
+  <td id="theme">Swanson</td>
+  </tr>
+  <tr>
+  <th>Venue</th>
+  <td id="venue">Brown</td>
+  </tr>
+  <tr>
+  <th>Date</th>
+  <td id="date">Brown</td>
+  </tr>
+  <tr>
+  <th>Starting time</th>
+  <td id="starting">Brown</td>
+  </tr>
+  <tr>
+  <th>Ending time</th>
+  <td id="ending">Brown</td>
+  </tr>
+  <tr>
+  <th>Invited Guest(s)</th>
+  <td id="guest">Brown</td>
+  </tr>
+  <tr>
+  <th>Contact</th>
+  <td id="phone">Brown</td>
+  </tr>
+  <tr>
+  <th>Service needed</th>
+  <td id="workType">Brown</td>
+  </tr>
+</table>
+<div class="w3-center">
+  
+<button onclick="print()" class="w3-button w3-black w3-margin-top" type="submit">
+     <i class="fa-solid fa-print"></i>
+     PRINT
+        </button> <br />
+<button onclick="history.back()" class="w3-button w3-red w3-margin-top" type="submit">
+     <i class="fa-solid fa-pen-to-square"></i>
+     EDIT INFO
+        </button> <br />
+ <button onclick="window.location.replace('index.html')" class="w3-button w3-green w3-margin-top" type="submit">
+     <i class="fa-solid fa-home"></i>
+     HOME
+        </button>
+     </div>
+  <script type="text/javascript" charset="utf-8">
+document.getElementById('ministry').innerHTML = localStorage.ministry;
+document.getElementById('programme').innerHTML = localStorage.programme;
+document.getElementById('theme').innerHTML = localStorage.theme;
+document.getElementById('venue').innerHTML = localStorage.venue;
+document.getElementById('date').innerHTML = localStorage.date;
+document.getElementById('starting').innerHTML = localStorage.starting;
+document.getElementById('ending').innerHTML = localStorage.ending;
+document.getElementById('guest').innerHTML = localStorage.guest;
+document.getElementById('phone').innerHTML = localStorage.phone;
+document.getElementById('workType').innerHTML = localStorage.workType;
+  </script>
+  </body>
+</html>
